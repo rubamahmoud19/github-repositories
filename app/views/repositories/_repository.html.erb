@@ -1,0 +1,7 @@
+<li class = "w3-bar">
+  <%= image_tag image_url(repository["owner"]["avatar_url"]), class:"w3-bar-item w3-circle w3-hide-small", style: "width:85px"%>
+  <div class="w3-bar-item">
+    <span class="w3-large"><%= link_to repository["name"], repository["html_url"], target: "_blank" %> </span> <br>
+    <span><%= link_to repository["owner"]["login"], repository["owner"]["html_url"], target: "_blank" %> </span>
+  </div>
+</li>
